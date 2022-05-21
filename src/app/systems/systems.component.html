@@ -1,0 +1,20 @@
+<main>
+  <div class="systems">
+    <div *ngFor="let system of systems">
+      <mat-card class="systems__card">
+        <mat-card-header>
+          <mat-card-title class="info__name">{{
+            system.systemName
+          }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-title>
+          {{ system.systemLabel }}
+        </mat-card-title>
+        <mat-card-content>
+          <span>Created Date : {{ system.createdDate }}</span>
+          <span>Is Disabled : {{ system.disabled }}</span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</main>
